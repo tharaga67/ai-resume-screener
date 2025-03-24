@@ -1,11 +1,11 @@
-import spacy
+import en_core_web_sm
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import string
 import re
 
-# Load English NLP model
-nlp = spacy.load('en_core_web_sm')
+# Load English NLP model (from local install)
+nlp = en_core_web_sm.load()
 
 # Text cleaning function
 def clean_text(text):
