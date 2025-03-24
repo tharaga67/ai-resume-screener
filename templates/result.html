@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Match Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #c3ecf5, #e0c3fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #444;
+        }
+        .score {
+            font-size: 40px;
+            color: #007bff;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .file-name {
+            font-size: 18px;
+            color: #555;
+        }
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        a:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>✅ Resume Analyzed Successfully</h2>
+        <div class="file-name">📄 {{ filename }}</div>
+        <div class="score">Match Score: {{ score }}%</div>
+        <a href="/">🔁 Try Another Resume</a>
+    </div>
+</body>
+</html>
